@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="First.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainIMG"><header>It's just a MAGIC TRICK</header>
+   <div class="flexbox">
+   <article class="table">
+    <h3>Результаты опроса</h3>
+    <input list="names" id="nameInput" placeholder="Введите имя или выберите из списка" required>
+<datalist id="names"></datalist>
+<button class="table" id="showResults">Показать результаты</button>
+<button class="table" id="showAllResults">Показать все результаты</button>
+<button class="table" id="clearAll">Очистить</button>
+<table id="resultsTable">
+    <tbody><!--здесь будет отображаться контент--></tbody>
+</table>
+     <!-- Подключаем JavaScript файл -->
+     <script src="results.js"></script>
+   </article>
+   <nav>
+    <button class="menu" onclick="location.href='index.html'">Главная</button>
+    <button class="menu" onclick="location.href='second.html'">Результаты</button>
+   </nav>
+</div>
+</div>
+
+   <footer>
+    <img src="resource/футер.png" width="10% ">
+   </footer>
+
+</body>
+</html>
+

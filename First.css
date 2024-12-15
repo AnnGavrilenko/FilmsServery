@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+body {
+    background-image: url(resource/шерлокФОН.png);
+    padding: auto;
+    padding: 3% 7%;
+    margin: 0;
+    background-size: cover;
+   
+}
+
+div.mainIMG {
+    background-image: url(resource/шерлок.jpg);
+    background-size: cover;
+    border: 3px solid rgba(176, 176, 176, .5); /*a прозрачность альфа*/
+    height: 500px;
+}
+
+header, footer, div.mainIMG {
+   border-radius: 10px;
+}
+@font-face {
+	font-family: 'DancingScript-Bold';
+	src: url('resource/fonts/dancingscript-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('resource/fonts/dancingscript-bold.svg') format('embedded-opentype'), /* IE < 9 */
+		url('resource/fonts/dancingscript-bold.ttf') format('woff2'), /* Super Modern Browsers */
+		url('resource/fonts/dancingscript-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('resource/fonts/dancingscript-bold.woff2') format('truetype'), /* Safari, Android, iOS */
+		
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'DancingScript-Bold';
+    padding: 1%;
+    font-size: 25px;
+}
+
+div.flexbox {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.flexbox article {
+    width: 80%;
+    margin: 0 auto;
+}
+   
+
+h3 {
+    font-family: 'Bad Script';
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+
+footer {
+   text-align: center;
+   background-size: 20px;
+   padding: 1%;
+}
+
+footer img {
+    opacity: 0.8;
+}
+
+form {
+   margin: auto;
+   margin-bottom: 30px;
+   padding: 20px 20px;
+   width: 90%;
+   background-image: url(resource/шерлокФОН.png);
+   color: white;
+   font-size: 15px;
+   font-family: 'Dancing Script', cursive;
+   border-radius: 10px;
+   
+}
+
+textarea::placeholder {
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px; /* Задайте нужный размер шрифта */
+    color: grey; /* Можно также задать цвет */
+}
+
+.form-group label:first-of-type, table th, tbody {
+    font-family: 'M PLUS Rounded 1c', thin;
+    font-weight: lighter;
+}
+
+div.contacts, div.preferences {
+    border: 1px solid rgb(246, 241, 241);
+}
+
+.preferences > div, .contacts > div  {
+    margin: 10px;
+}
+
+
+
+nav {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+button.menu {
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 12px 12px 0;
+}
+
+form button, button.table {
+    font-family: 'Dancing Script', cursive;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 12px 12px 0;
+}
+
+button:hover, button.menu:hover {
+    background-color: white;
+    color: black;
+}
+
+table#resultsTable {
+background-color: rgba(176, 176, 176, .8);
+border-collapse: collapse;
+border: 1px solid black;
+margin: 10px;
+
+}
+
+ table th{
+    font-weight: bold;
+}
+
+table td, table th {
+    border: 1px solid black;
+    padding: 5px;
+}
+

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'DancingScript-Bold';
+	src: url('resource/fonts/dancingscript-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('resource/fonts/dancingscript-bold.svg') format('embedded-opentype'), /* IE < 9 */
+		url('resource/fonts/dancingscript-bold.ttf') format('woff2'), /* Super Modern Browsers */
+		url('resource/fonts/dancingscript-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('resource/fonts/dancingscript-bold.woff2') format('truetype'), /* Safari, Android, iOS */
+		
+}

@@ -1,0 +1,61 @@
+
+
+div.index {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*свойство backdrop-filter изменяется, оно будет плавно анимироваться в течение 0.3 секунды 
+    с использованием функции сглаживания ease*/
+    transition: backdrop-filter 0.3s ease;
+    border-radius: 10px;
+}
+.overlay:hover {
+    backdrop-filter: none;
+}
+.transparent {
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    color: rgba(34, 33, 33, 0.01);
+    right: 0;
+    top: 30%;
+    background: url(resource/шерлок.jpg);
+    background-clip: text;
+    /*вырезаем на фоне текст*/
+    -webkit-background-clip: text;
+
+}
+
+.overlay:hover .transparent {
+    color: white;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    left: 50%;
+    top: 10%;
+}
+
+
+aside {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 40%;
+    height: 30%;
+    border-radius: 5px;
+   color: white;
+   font-size: 30px;
+   font-family: 'Bad Script';
+}

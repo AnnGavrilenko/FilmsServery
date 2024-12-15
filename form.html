@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="First.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainIMG">
+   <header>It's just a MAGIC TRICK</header>
+   <div class="flexbox">
+   <article>
+    <h3>Ваши предпочтения в фильмах</h3>
+    <form id="movieSurvey">
+        
+        <div class="contacts">
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Ваш адрес электронной почты:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    </div>
+    <div class="preferences" >
+        <div class="form-group">
+            <label for="week">Сколько фильмов вы обычно смотрите в неделю?</label>
+            <input type="number" id="week" name="week" min="0" required>
+        </div>
+        <div class="form-group">
+            <label>Вы любите смотреть фильмы на:</label>
+            <input type="checkbox" id="netflix" name="platform" value="Netflix">
+            <label for="netflix">Netflix</label>
+            <input type="checkbox" id="hbo" name="platform" value="HBO">
+            <label for="hbo">HBO</label>
+            <input type="checkbox" id="disney" name="platform" value="Disney+">
+            <label for="disney">Disney+</label>
+        </div>
+        <div class="form-group">
+            <label for="genre">Какой ваш любимый жанр фильма?</label>
+            <select id="genre" name="genre" required>
+                <option value="">Выберите жанр</option>
+                <option value="драма">Драма</option>
+                <option value="комедия">Комедия</option>
+                <option value="экшен">Экшен</option>
+                <option value="приключения">Приключения</option>
+                <option value="научная фантастика">Научная фантастика</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Какой ваш любимый способ просмотра фильмов?</label>
+             <!-- имя нужно чтобы группировать value-->
+            <input type="radio" id="cinema" name="watchingPreference" value="в кино" required>
+            <label for="cinema">In cinema</label>
+            <input type="radio" id="home" name="watchingPreference" value="дома">
+            <label for="home">At home</label>
+        </div>
+        <div class="form-group">
+            <label for="comments">Ваши комментарии или рекомендации:</label>
+            <textarea id="comments" name="comments" rows="2" cols="50" placeholder="I will note, that..."></textarea>
+        </div>
+    </div>
+    <center>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сброс</button></center>
+    </form>
+     <!-- Подключаем JavaScript файл -->
+     <script src="scriptFirst.js"></script>
+   </article>
+   <!--навигация-->
+   <nav>
+    <!--огда пользователь кликнет на элемент, 
+    к которому применен этот обработчик (св-во js), 
+    он будет перенаправлен на страницу index.html-->
+    <button class="menu" onclick="location.href='index.html'">Главная</button>
+    <button class="menu" onclick="location.href='second.html'">Результаты</button>
+</nav>
+</div>
+   <footer>
+    <img src="resource/футер.png" width="10% ">
+   </footer>
+</div>
+</body>
+</html>
